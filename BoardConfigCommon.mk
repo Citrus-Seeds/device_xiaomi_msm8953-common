@@ -16,8 +16,6 @@
 
 VENDOR_PATH := device/xiaomi/msm8953-common
 
-TARGET_SPECIFIC_HEADER_PATH := $(VENDOR_PATH)/include
-
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -199,7 +197,6 @@ TARGET_USE_SDCLANG := true
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
-TARGET_RIL_VARIANT := caf
 
 # Recovery
 ifeq ($(AB_OTA_UPDATER), true)
